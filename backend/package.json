@@ -1,0 +1,32 @@
+{
+  "name": "personal-expense-tracker-backend",
+  "version": "1.0.0",
+  "description": "Backend for Expense Tracker using Node.js and MySQL",
+  "main": "server.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "node dist/bundle.js",
+    "dev": "nodemon --exec babel-node server.js"
+  },
+  "author": "Jon Alda",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.25.7",
+    "@babel/core": "^7.25.7",
+    "@babel/node": "^7.25.7",
+    "@babel/preset-env": "^7.25.7",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-node-externals": "^3.0.0"
+  }
+}

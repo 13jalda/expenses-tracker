@@ -1,0 +1,14 @@
+// Importaciones globales y configuraciones generales
+@import './variables.scss'; // Variables de colores, fuentes, tamaños, etc.
+@import './mixins.scss';    // Mixins globales
+@import './base.scss';      // Estilos base como resets y tipografías
+
+// Estilos por secciones
+@import './dashboard.scss';
+@import './expenses.scss';
+@import './incomes.scss';
+@import './categories.scss';
+@import './contact.scss';
+@import '.aboutus.scss';
+@import './weather.scss';
+@import './modal.scss';

@@ -1,0 +1,23 @@
+@import './variables';
+@import './mixins';
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 2rem;
+
+  @include for-desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include for-tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chart {
+    background-color: white;
+    padding: 1rem;
+    @include modal-box-shadow();
+  }
+}

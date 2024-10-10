@@ -1,0 +1,41 @@
+// _variables.scss
+
+$primary-color: #4CAF50;  // Verde principal
+$secondary-color: #f4a261;  // Color tierra
+$font-family: 'Roboto', sans-serif;
+
+
+$desktop: 1024px;
+$tablet: 768px;
+$mobile: 576px;
+
+// Colores, bordes y demás variables que ya teníamos
+$modal-bg-color: white;
+$modal-overlay-bg: rgba(0, 0, 0, 0.5);
+$modal-border-radius: 8px;
+$modal-padding: 2rem;
+$modal-width: 500px;
+
+$button-padding: 0.5rem 1rem;
+$button-color-primary: green;
+$button-color-secondary: gray;
+
+$box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+// Variables de colores
+$primary-color: #4CAF50;
+$secondary-color: #ff9800;
+
+// Variables de tamaño
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+$font-size-sm: 12px;
+$font-size-md: 16px;
+$font-size-lg: 24px;
+$font-size-xl: 32px;
+
+// Variables de bordes
+$border-radius-sm: 4px;
+$border-radius-md: 8px;

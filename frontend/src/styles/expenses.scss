@@ -1,0 +1,20 @@
+.expenses {
+    padding: 2rem;
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      th, td {
+        padding: 1rem;
+        text-align: left;
+      }
+      th {
+        background-color: #4CAF50; // Color verde
+        color: white;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    }
+  }
+  

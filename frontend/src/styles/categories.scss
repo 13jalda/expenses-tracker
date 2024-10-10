@@ -1,0 +1,17 @@
+.categories {
+    padding: 2rem;
+  
+    .category-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+  
+      .category-item {
+        padding: 1rem;
+        background-color: #f4a261; // Color tierra
+        color: white;
+        border-radius: 5px;
+      }
+    }
+  }
+  

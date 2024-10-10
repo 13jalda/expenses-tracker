@@ -1,0 +1,80 @@
+// Mixin para centrar elementos con flexbox
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+  }
+  
+  // Mixin para un contenedor de cuadrícula (grid)
+  @mixin grid-container($columns: 3, $gap: 1rem) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+  }
+  
+  // Mixin para un botón estilizado
+  @mixin button-style($bg-color: $primary-color, $color: white, $padding: 0.5rem 1rem) {
+    background-color: $bg-color;
+    color: $color;
+    padding: $padding;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: darken($bg-color, 10%);
+    }
+  }
+  
+  // Mixin para aplicar sombra en elementos
+  @mixin box-shadow($color: rgba(0, 0, 0, 0.1), $blur: 10px, $spread: 1px) {
+    box-shadow: 0px 4px $blur $spread $color;
+  }
+  
+  // Mixin para texto truncado con puntos suspensivos
+  @mixin text-ellipsis($max-width: 100%) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: $max-width;
+  }
+  
+  // Mixin para manejar media queries
+  @mixin respond-to($breakpoint) {
+    @if $breakpoint == mobile {
+      @media (max-width: 768px) {
+        @content;
+      }
+    }
+    @else if $breakpoint == tablet {
+      @media (max-width: 1024px) {
+        @content;
+      }
+    }
+    @else if $breakpoint == desktop {
+      @media (min-width: 1025px) {
+        @content;
+      }
+    }
+  }
+  
+
+
+  @mixin for-desktop {
+    @media (min-width: $desktop) {
+      @content;
+    }
+  }
+  
+  @mixin for-tablet {
+    @media (max-width: $desktop) and (min-width: $tablet) {
+      @content;
+    }
+  }
+  
+  @mixin for-mobile {
+    @media (max-width: $tablet) {
+      @content;
+    }
+  }
